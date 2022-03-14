@@ -14,8 +14,8 @@ Use of any aspect of this training requires full attribution (see CC-BY licence)
 
 > Murray, N.J., Lyons, M.B., Bunting, P., Canto, R., Lucas, R., Navarro Otero, A., Roelfsema, C.M., Toor, M., Worthington, T.A. (in submission) coastTrain: a global reference library for coastal ecosystems. *Limnology and Oceanography Letters*
 
-coastTrain 
-![img](figures/wetland_change.jpg)
+*coastTrain: a global reference library for coastal ecosystems* 
+![img](figs/coastTrain.JPG)
 
 #### Licence
 This software is licensed under a Creative Commons Attribution-Non Commercial 4.0 International License. [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -55,11 +55,10 @@ Below is a set of papers that have used or supplied data to coastTrain.
 
 > Lyons, M., C. Roelfsema, E. Kovacs, R. Borrego, E. Kennedy, K. Markey, M. Roe, D. Yuwono, D. Harris, S. Phinn, J. Li, D. Knapp, K. Larsen, D. Traganos, G. P. Asner, Murray, N.J. (2020) Mapping the world's coral reefs using a global multiscale earth observation framework. Remote Sensing in Ecology and Conservation. (https://doi.org/10.1002/rse2.157) 
 
-*Tidal flats*
-> Murray, N.J., Phinn, S., Clinton, N., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M.B., Thau, D., Fuller, R.A. (2019) The global distribution and trajectory of tidal flats. Nature. 565, 222-225 http://dx.doi.org/10.1038/s41586-018-0805-8.
-
 *Mangroves*
 >Bunting, P., Rosenqvist, A., Lucas, R., Rebelo, L.-M., Hilarides, L., Thomas, N., . . . Finlayson, C. (2018). The Global Mangrove Watch—A new 2010 global baseline of mangrove extent. Remote Sensing, 10(10), 1669. Retrieved from http://www.mdpi.com/2072-4292/10/10/1669
 
 >Bunting, P., Rosenqvist, A., Hilarides, L., Lucas, R. M., & Thomas, N. (2022). Global Mangrove Watch: Updated 2010 Mangrove Forest Extent (v2.5). Remote Sensing, 14(4), 1034. (https://www.mdpi.com/2072-4292/14/4/1034)
 
+*Tidal flats*
+> Murray, N.J., Phinn, S., Clinton, N., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M.B., Thau, D., Fuller, R.A. (2019) The global distribution and trajectory of tidal flats. Nature. 565, 222-225 http://dx.doi.org/10.1038/s41586-018-0805-8.
