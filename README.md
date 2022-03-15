@@ -60,7 +60,7 @@ Every occurrence record in coastTrain includes the following attributes.
 	"IUCN_FunGC": "MT1.2",
 	"Reference Data Start": 2014,
 	"Reference Data End": 2016,
-	"Project Ref": "GIC",
+	"Project Ref": "GIC"
 }
 ```
 
