@@ -12,7 +12,7 @@ A full description of the methods used to develop coastTrain is available in the
 #### Citation
 Use of any aspect of this training requires full attribution (see CC-BY licence). Please cite the published paper:
 
-> Murray, N.J., Lyons, M.B., Bunting, P., Canto, R., Lucas, R., Navarro Otero, A., Roelfsema, C.M., Toor, M., Worthington, T.A. (in submission) coastTrain: a global reference library for coastal ecosystems. *Limnology and Oceanography Letters*
+> Murray, N.J., Lyons, M.B., Bunting, P., Canto, R., Lucas, R., Navarro Otero, A., Roelfsema, C.M., Toor, M., Worthington, T.A. (in submission) coastTrain: a global reference library for coastal ecosystems. *Remote Sensing*
 
 *coastTrain: a global reference library for coastal ecosystems* 
 ![img](figs/coastTrain.JPG)
