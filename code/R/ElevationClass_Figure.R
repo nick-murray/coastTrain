@@ -12,7 +12,7 @@ getwd()
 setwd ("C:\\_NickMurray\\Murray_Git\\coastTrain") # work computer
 
 # Open coastTrain file
-distcoast <- read.csv("C:\\Dropbox\\Publications\\Published_Papers\\_2022_CoastTRAIN_TrainingData_MURRAY\\Dataset\\analysis\\coastTrain_v1_0_etopo_sampled.csv", stringsAsFactors = F)
+distcoast <- read.csv("C:\\Dropbox\\Publications\\Published_Papers\\_2022_CoastTRAIN_TrainingData_MURRAY\\Dataset\\analysis\\coastTrain_v1_1_etopo_sampled.csv", stringsAsFactors = F)
 # Relabel classes from Number to Name
 distcoast$Class[distcoast$Class=="0"]<-"Land"
 distcoast$Class[distcoast$Class=="1"]<-"Water"
@@ -38,7 +38,7 @@ out <- distcoast2 %>%
   gather(key = Class, value = etopo) %>%   # Reshape
   ggplot(aes(x = etopo)) +   # Basic chart
   geom_histogram(binwidth=2, alpha=0.8) + # Type: histogram (counts)
-  facet_wrap(~Class, nrow = 2, scales = "free") + # Create histograms for every Class with different scales
+  facet_wrap(~Class, nrow = 3, scales = "free") + # Create histograms for every Class with different scales
   aes(fill = Class) + 
   scale_fill_manual (values=colPalette) + # Fill colors
   xlim(-50,50) + # Limit x axis
@@ -60,7 +60,7 @@ out.2 <- out + theme(panel.background = element_blank(),
                 legend.background = element_blank()) 
 
 
-ggsave(filename='C:/_NickMurray/Murray_Git/coastTrain/figs/histogram2.pdf', plot=out.2, width=18, height=12, units='cm', limitsize=FALSE)
+ggsave(filename='C:/_NickMurray/Murray_Git/coastTrain/figs/histogram_v2.pdf', plot=out.2, width=18, height=20, units='cm', limitsize=FALSE)
 
 
 # ## Same histogram (counts) but for all Classes

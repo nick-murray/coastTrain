@@ -1,0 +1,74 @@
+# Libraries
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(scales)
+
+# Color palette for figures: Coral reefs (Red: #CE2929), Mangroves (Darkgreen: #009966), Saltmarsh (Blue: #006699), Seagrass (Lightgreen: #A3DD57), Tidal Flat (Orange: #FF9900)
+colPalette <- c("#CE2929", '#009966','#006699', "#A3DD57",'#FF9900' )
+
+# data
+getwd()
+setwd ("C:\\Users\\jc928388\\OneDrive - James Cook University\\CoastTrain") 
+
+# Open coastTrain file
+distcoast <- read.csv(".\\coastTrain_v1_1_etopo_sampled.csv", stringsAsFactors = F)
+# Relabel classes from Number to Name
+distcoast$Class[distcoast$Class=="0"]<-"Land"
+distcoast$Class[distcoast$Class=="1"]<-"Water"
+distcoast$Class[distcoast$Class=="2"]<-"Tidal Flat"
+distcoast$Class[distcoast$Class=="3"]<-"Mangroves"
+distcoast$Class[distcoast$Class=="4"]<-"Coral Reef"
+distcoast$Class[distcoast$Class=="5"]<-"Saltmarsh"
+distcoast$Class[distcoast$Class=="6"]<-"Seagrass"
+distcoast$Class[distcoast$Class=="9"]<-"Rocky intertidal"
+distcoast$Class[distcoast$Class=="10"]<-"Kelp forest"
+distcoast$Class<-as.factor(distcoast$Class)
+# Remove all columns but Class and elevation (etopo)
+distcoast<-distcoast[,c(2,15)]
+# Remove Classes not used in plot (Land, Water, Rocky intertidal and Kelp forest)
+distcoast2<-subset(distcoast, Class!="Land" & Class!="Water"& Class!="Rocky intertidal"& Class!="Kelp forest")
+
+
+## Histogram (counts) for Classes of interest
+distcoast2 %>%
+  gather(key = Class, value = etopo) %>%   # Reshape
+  ggplot(aes(x = etopo)) +   # Basic chart
+  geom_histogram(binwidth=2, alpha=0.8) + # Type: histogram (counts)
+  facet_wrap(~Class, nrow = 3, scales = "free") + # Create histograms for every Class with different scales
+  aes(fill = Class) + scale_fill_manual (values=colPalette) + # Fill colors
+  xlim(-50,50) + # Limit x axis
+  geom_vline (xintercept = 0, linetype = "longdash") + # Add vertical line at elevation 0
+  scale_y_continuous(expand = expansion(mult = c(0, 0.07)))  + # Add space between label and top of histogram
+  labs(x = "Elevation", y = "Number of points") + # Label x and y axis
+  theme_bw() # White background
+
+
+## Same histogram (counts) but for all Classes
+distcoast %>%
+  gather(key = Class, value = etopo) %>%   # Reshape
+  ggplot(aes(x = etopo)) +   # Basic chart
+  geom_histogram(binwidth=2, alpha=0.8) + # Type: histogram (counts)
+  facet_wrap(~Class, nrow = 3, scales = "free") + # Create histograms for every Class with different scales
+  aes(fill = Class) + scale_fill_manual (values=c("#CE2929",'brown','yellow', '#009966','black', '#006699', "#A3DD57",'#FF9900','grey' )) + # Fill colors
+  xlim(-50,50) + # Limit x axis
+  geom_vline (xintercept = 0, linetype = "longdash") + # Add vertical line at elevation 0
+  scale_y_continuous(expand = expansion(mult = c(0, 0.07)))  + # Add space between label and top of histogram
+  labs(x = "Elevation", y = "Number of points") + # Label x and y axis
+  theme_bw() # White background
+
+
+# Histogram (percentage) for Classes of interest
+distcoast2 %>%
+  gather(key = Class, value = etopo) %>%   # Reshape
+  ggplot(aes(x = etopo)) +   # Basic chart
+  geom_histogram(aes(y = stat(density)),binwidth=2, alpha=0.8) + # Type: histogram (Percentage)
+  facet_wrap(~Class, nrow = 3) + # Create histograms for every Class with same scales
+  aes(fill = Class) + scale_fill_manual (values=colPalette) + # Fill colors
+  xlim(-50,50) + # Limit x axis
+  geom_vline (xintercept = 0, linetype = "longdash") + # Add vertical line at elevation 0
+  scale_y_continuous(labels = percent,expand = expansion(mult = c(0, 0.07)))  + # Add space between label and top of histogram
+  labs(x = "Elevation", y = "Percentage of Training data") + # Label x and y axis
+  theme_bw() # White background
+
+
