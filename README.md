@@ -29,7 +29,7 @@ Data is given in the geojson format with 15 field attributes for each data point
 #### Citation
 Use of any aspect of this training requires full attribution (see CC-BY licence). Please cite the published paper:
 
->Murray, N. J., Bunting, P., Canto, R., Hilarides, L., Kennedy, E. V., Lucas, R., Lyons, M. B., Navarro, A., Roelfsema, C. M., Rosenqvist, A., Spalding, M., Toor, M. & Worthington, T. A. (in submission) coastTrain: a global reference library for coastal ecosystems. Remote Sensing.
+>Murray, N. J., Bunting, P., Canto, R., Hilarides, L., Kennedy, E. V., Lucas, R., Lyons, M. B., Navarro, A., Roelfsema, C. M., Rosenqvist, A., Spalding, M., Toor, M. & Worthington, T. A. (2022) coastTrain: a global reference library for coastal ecosystems. Remote Sensing. https://doi.org/10.3390/rs14225766
 
 *coastTrain: a global reference library for coastal ecosystems* 
 ![img](figs/coastTrain.JPG)
@@ -80,7 +80,12 @@ Every occurrence record in coastTrain includes the following attributes.
 ```
 
 #### Acknowledgements
-coastTrain was developed with an ARC Discovery Early Career Researcher Grant to Murray (DE190100101).
+coastTrain was developed with an ARC Discovery Early Career Researcher Grant to Murray (DE190100101). We thank all the research assistants, students, interns, practitioners, managers and volunteers who contributed their time to assist the training data collection process. These individuals are listed in the acknowledgements in the source publications. Below is a list, though it may not be exhaustive (see source publications):
+
+- N. Hill (UQ)
+- N. Mallot (UQ)
+- N. Younes-Cardenas (JCU)
+- Z. Xie (UQ)
 
 #### Example publications
 Below is a set of papers that have used or supplied data to coastTrain.
@@ -94,18 +99,24 @@ Below is a set of papers that have used or supplied data to coastTrain.
 > B. Lyons, M., M. Roelfsema, C., V. Kennedy, E., M. Kovacs, E., Borrego‐Acevedo, R., Markey, K., Roe, M., M. Yuwono, D., L. Harris, D., R. Phinn, S. and Asner, G.P., 2020. Mapping the world's coral reefs using a global multiscale earth observation framework. Remote Sensing in Ecology and Conservation, 6(4), pp.557-568. https://doi.org/10.1002/rse2.157.
 
 *Mangroves*
+
 > Bunting, P., Rosenqvist, A., Hilarides, L., Lucas, R.M. and Thomas, N., 2022. Global Mangrove Watch: Updated 2010 Mangrove Forest Extent (v2. 5). Remote Sensing, 14(4), p.1034. https://doi.org/10.3390/rs14041034.
 
 > Bunting, P., Rosenqvist, A., Hilarides, L., Lucas, R.M., Thomas, N., Tadono, T., Worthington, T.A., Spalding, M., Murray, N.J. and Rebelo, L.M., 2022. Global Mangrove Extent Change 1996–2020: Global Mangrove Watch Version 3.0. Remote Sensing, 14(15), p.3657. https://doi.org/10.3390/rs14153657.
 
 > Bunting, P., Rosenqvist, A., Lucas, R.M., Rebelo, L.M., Hilarides, L., Thomas, N., Hardy, A., Itoh, T., Shimada, M. and Finlayson, C.M., 2018. The global mangrove watch—a new 2010 global baseline of mangrove extent. Remote Sensing, 10(10), p.1669. https://doi.org/10.3390/rs10101669.
 
-
+> Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V., Lovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M. and Waltham, N.J., 2022. High-resolution mapping of losses and gains of Earth’s tidal wetlands. Science, 376(6594), pp.744-749. https://doi.org/10.1126/science.abm9583.
 
 *Tidal flats*
+
 > Murray, N.J., Phinn, S.R., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M.B., Clinton, N., Thau, D. and Fuller, R.A., 2019. The global distribution and trajectory of tidal flats. Nature, 565(7738), pp.222-225. https://doi.org/10.1038/s41586-018-0805-8. 
 
 > Murray, N. J., Phinn, S. R., Fuller, R. A., DeWitt, M., Ferrari, R., Johnston, R., Clinton, N. & Lyons, M. B., 2022. High-resolution global maps of tidal flat ecosystems from 1984 to 2019. Scientific Data, 9(1), pp.1-9. https://doi.org/10.1038/s41597-022-01635-5.
+
+> Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V., Lovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M. and Waltham, N.J., 2022. High-resolution mapping of losses and gains of Earth’s tidal wetlands. Science, 376(6594), pp.744-749. https://doi.org/10.1126/science.abm9583.
+
+*Saltmarshes*
 
 > Murray, N.J., Worthington, T.A., Bunting, P., Duce, S., Hagger, V., Lovelock, C.E., Lucas, R., Saunders, M.I., Sheaves, M., Spalding, M. and Waltham, N.J., 2022. High-resolution mapping of losses and gains of Earth’s tidal wetlands. Science, 376(6594), pp.744-749. https://doi.org/10.1126/science.abm9583.
 
