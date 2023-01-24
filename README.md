@@ -82,10 +82,19 @@ Every occurrence record in coastTrain includes the following attributes.
 #### Acknowledgements
 coastTrain was developed with an ARC Discovery Early Career Researcher Grant to Murray (DE190100101). We thank all the research assistants, students, interns, practitioners, managers and volunteers who contributed their time to assist the training data collection process. These individuals are listed in the acknowledgements in the source publications. Below is a list, though it may not be exhaustive (see source publications):
 
-- N. Hill (UQ)
-- N. Mallot (UQ)
-- N. Younes-Cardenas (JCU)
-- Z. Xie (UQ)
+- R. Borrego
+- N. Hill
+- E. Kovacs
+- N. Mallot
+- K. Markey
+- A. Ordonez
+- M. Roe
+- C. Say
+- P. Tudman
+- J. Wolff
+- Z. Xie
+- N. Younes-Cardenas
+- D. Yuwanono
 
 #### Example publications
 Below is a set of papers that have used or supplied data to coastTrain.
